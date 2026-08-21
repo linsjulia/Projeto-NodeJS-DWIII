@@ -14,12 +14,22 @@ function readFile(response, file){
 
 var callback = function(request, response){
     response.writeHead(200, {"Content-type": "text-plain"});
+
     var parts = url.parse(request.url);
 
     if(parts.path == "/"){
         response.writeHead(200, {"Content-type": "text-plain"});
         readFile(response, "index.html");
-    } else(parts.path == "/julia")
+    }
+    // } else if(parts.path == "/Julia"){
+    //     response.writeHead(200, {"Content-type": "text-plain"});
+    //     readFile(response, "index.html")
+
+    // } else if(parts.path == "/Vitor"){
+    //     response.writeHead(200, {"Content-type": "text-plain"});
+    //     readFile(response, "index.html")
+    // }
+
 }
 
 
