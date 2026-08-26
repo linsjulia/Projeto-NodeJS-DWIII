@@ -46,7 +46,7 @@ var callback = function(request, response){
         readFile(response, "vitor/sobre/sobre.html");
     } 
     else if(parts.path == "/vitor/curriculo"){
-        response.writeHead(200, {"Content-type": "text/html; charset=utf-8"});
+        response.writeHead(200, {"Content-type": "application/pdf"});
         readFile(response, "vitor/curriculo/curriculo.pdf");
     }
     
